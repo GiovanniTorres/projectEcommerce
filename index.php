@@ -1,3 +1,3 @@
 <?php
-print "Desde github":
+print "Desde github";
 ?>
