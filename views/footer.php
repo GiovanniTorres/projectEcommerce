@@ -1,6 +1,8 @@
 <footer class="footer">
-    <p>&copy; <?php echo date("Y"); ?> Mi Sitio Web. Todos los derechos reservados.</p>
+    <p>© 2025 - Mi Sitio Web</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
