@@ -1,8 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
-
-    menuToggle.addEventListener("click", function () {
-        menu.classList.toggle("active"); // Alterna entre mostrar u ocultar el menú
-    });
-});
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
