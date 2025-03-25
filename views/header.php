@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Sitio Web</title>
-    <link rel="stylesheet" href="../public/style.css"> <!-- Ruta corregida -->
+    <!-- Incluyendo el CSS general para el sitio -->
+    <link rel="stylesheet" href="../public/styles.css">
+    <!-- Incluyendo el CSS para el menú -->
+    <link rel="stylesheet" href="../public/menu.css">
 </head>
 <body>
-
     <header class="header">
         <h1>Mi Sitio Web</h1>
         <nav class="nav">
