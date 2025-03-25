@@ -1,0 +1,64 @@
+* {
+        margin: 0;
+            padding: 0;
+                box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                    }
+
+                    body {
+                        background-color: #f4f4f4;
+                            color: #333;
+                                text-align: center;
+                                }
+
+                                .header {
+                                    background-color: #007bff;
+                                        color: white;
+                                            padding: 20px;
+                                            }
+
+                                            .header nav ul {
+                                                list-style: none;
+                                                    padding: 0;
+                                                    }
+
+                                                    .header nav ul li {
+                                                        display: inline;
+                                                            margin: 0 15px;
+                                                            }
+
+                                                            .header nav ul li a {
+                                                                color: white;
+                                                                    text-decoration: none;
+                                                                        font-weight: bold;
+                                                                        }
+
+                                                                        .contenido {
+                                                                            padding: 20px;
+                                                                            }
+
+                                                                            .contenedor {
+                                                                                display: flex;
+                                                                                    justify-content: center;
+                                                                                        gap: 20px;
+                                                                                            padding: 20px;
+                                                                                            }
+
+                                                                                            .caja {
+                                                                                                width: 30%;
+                                                                                                    min-height: 150px;
+                                                                                                        background-color: lightblue;
+                                                                                                            display: flex;
+                                                                                                                align-items: center;
+                                                                                                                    justify-content: center;
+                                                                                                                        border-radius: 10px;
+                                                                                                                            font-size: 1.5em;
+                                                                                                                            }
+
+                                                                                                                            .footer {
+                                                                                                                                background-color: #222;
+                                                                                                                                    color: white;
+                                                                                                                                        padding: 20px;
+                                                                                                                                            margin-top: 20px;
+                                                                                                                                            }
+}
