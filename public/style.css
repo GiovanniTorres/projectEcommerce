@@ -75,9 +75,9 @@ body {
 
 /* 🔹 MEDIA QUERIES PARA MÓVILES */
 @media (max-width: 768px) {
-    /* 🔸 MENÚ SE VUELVE UN BOTÓN HAMBURGUESA */
+    /* 🔸 MENÚ SE VUELVE DESPLEGABLE */
     .menu {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -85,10 +85,12 @@ body {
         background: #007bff;
         width: 100%;
         padding: 10px 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
     }
 
     .menu.activo {
-        display: flex;
+        transform: translateY(0);
     }
 
     .menu li {
@@ -109,4 +111,13 @@ body {
     .caja {
         width: 100%;
     }
+}
+
+/* 🔹 FOOTER */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
 }
