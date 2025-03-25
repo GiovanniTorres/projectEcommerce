@@ -1,123 +1,39 @@
-/* 🔹 RESET GENERAL */
-* {
+/* Estilos generales para el sitio */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* 🔹 BODY */
-body {
-    text-align: center;
     background-color: #f4f4f4;
 }
 
-/* 🔹 HEADER (MENÚ) */
-.header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-}
-
-/* 🔹 MENÚ NORMAL (ESCRITORIO) */
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* 🔹 BOTÓN HAMBURGUESA (OCULTO EN ESCRITORIO) */
-.menu-toggle {
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
-
-/* 🔹 CONTENEDOR PRINCIPAL */
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
     padding: 20px;
+    display: flex; /* Esto asegura que los divs estén en una fila horizontal */
+    justify-content: space-between;
 }
 
-.caja {
+.box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
     width: 30%;
-    min-height: 150px;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    border-radius: 10px;
-}
-
-/* 🔹 MEDIA QUERIES PARA MÓVILES */
-@media (max-width: 768px) {
-    /* 🔸 MENÚ SE VUELVE DESPLEGABLE */
-    .menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #007bff;
-        width: 100%;
-        padding: 10px 0;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .menu.activo {
-        transform: translateY(0);
-    }
-
-    .menu li {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    /* 🔸 BOTÓN HAMBURGUESA VISIBLE */
-    .menu-toggle {
-        display: block;
-    }
-
-    /* 🔸 LOS DIVS SE PONEN EN COLUMNA */
-    .contenedor {
-        flex-direction: column;
-    }
-
-    .caja {
-        width: 100%;
-    }
-}
-
-/* 🔹 FOOTER */
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 15px;
     text-align: center;
-    margin-top: 20px;
+}
+
+.box:hover {
+    background-color: #f1f1f1;
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Esto cambia a vertical en pantallas pequeñas */
+    }
+
+    .box {
+        width: 100%; /* Los divs ocupan todo el ancho */
+    }
 }
