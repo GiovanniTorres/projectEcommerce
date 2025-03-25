@@ -17,14 +17,16 @@
     padding: 10px 20px;
 }
 
-/* Estilos para el botón de hamburguesa */
+/* Estilos del botón de hamburguesa */
 .menu-toggle {
     display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     background-color: #333;
+    border: none;
+    text-align: center;
 }
 
 /* Para dispositivos pequeños */
@@ -33,10 +35,11 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #333;
+        text-align: center;
     }
 
     .menu.active {
@@ -45,5 +48,8 @@
 
     .menu-toggle {
         display: block; /* Asegura que el botón de hamburguesa sea visible */
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
 }
