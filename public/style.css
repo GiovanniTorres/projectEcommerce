@@ -1,0 +1,112 @@
+/* 🔹 RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 BODY */
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* 🔹 HEADER (MENÚ) */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 🔹 MENÚ NORMAL (ESCRITORIO) */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 🔹 BOTÓN HAMBURGUESA (OCULTO EN ESCRITORIO) */
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* 🔹 CONTENEDOR PRINCIPAL */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.caja {
+    width: 30%;
+    min-height: 150px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+/* 🔹 MEDIA QUERIES PARA MÓVILES */
+@media (max-width: 768px) {
+    /* 🔸 MENÚ SE VUELVE UN BOTÓN HAMBURGUESA */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #007bff;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu.activo {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* 🔸 BOTÓN HAMBURGUESA VISIBLE */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* 🔸 LOS DIVS SE PONEN EN COLUMNA */
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .caja {
+        width: 100%;
+    }
+}
